@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+  <title>agrenet</title>
+  <link rel="stylesheet" href="agrinet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!---the below will represent the onload function in java-->
+
+  <div class="bdx1">
+    <p>we wish to improve our services for you ,incase of erros please let us know .call 0768378729</p>
+  </div>
+  <div class="mbx">
+    <div class="bdx2">
+      <p id="lion">1hr modalate @5ksh</p>
+      <button onclick="openModal('Buy 1hr modalate at','5ksh')" type="submit">buy</button>
+    </div>
+
+    <div class="bdx2">
+      <p id="simba">1hr fast @10ksh</p>
+      <button onclick="openModal('Buy 1hr fast at','10ksh')" type="submit">buy</button>
+    </div>
+
+    <div class="bdx2">
+      <p id="Cheter">12hr fast @15ksh</p>
+      <button onclick="openModal('Buy 12hr fast at','15ksh')" type="submit">buy</button>
+    </div>
+
+    <div class="bdx2">
+      <p id="gazel">12hr modalate @20ksh</p>
+      <button onclick="openModal('Buy 12hr modalate at','20ksh')" type="submit">buy</button>
+    </div>
+
+    <div class="bdx2">
+      <p id="hippo">24hr modalate @25ksh</p>
+      <button onclick="openModal('Buy 24hr modalate at','25ksh')" type="submit">buy</button>
+    </div>
+
+    <div class="bdx2">
+      <p id="water">24hr fast @30ksh</p>
+      <button onclick="openModal('Buy 24hr fast at','30ksh')" type="submit">buy</button>
+    </div>
+
+    <div class="bdx2">
+      <p id="rain">7days modalate @200ksh</p>
+      <button onclick="openModal('Buy 7days modalate at','200ksh')" type="submit">buy</button>
+    </div>
+
+    <div class="bdx2">
+      <p id="goat">7days fast @300ksh</p>
+      <button id="Goat" onclick="openModal('Buy 7days fast at','300ksh')"type="submit">buy</button>
+    </div>
+
+    <div class="bdx2">
+      <p id="cow">1month  fast @800ksh</p>
+      <button onclick="openModal('Buy 1 month fast at','800ksh')" type="submit">buy</button>
+    </div>
+
+    <!-----------------------the code below will help you reconnect using your mpesa code ----------------------------------------->
+    <div class="last">
+      <p id="ship"> MPESA CODE</p>
+      <button id="Ship" onclick="openModal('MPESA CODE','')" type="submit">RECONNECT</button>
+    </div>
+  </div>
+  <!----------------------------------------------------------additional shits------------------------------------------------------>
+  <div class="modal" id="modal">
+    <div class="modalw">
+      <!-- <span class="close" onclick="closeModal()">&times;</span> -->
+      <div class="sss" id="selectedPlan"> 2gb</div>
+      <div class="sss" id="selectedprice">20ksh</div>
+      <!--code to be used later in js-->
+      <input type="number" name="number" id="number" placeholder="your phone number">
+      <button type="submit" onclick="checknumber()" id="check">OK</button>
+      <button type="notok" onclick="closeModal()" id="sak">CANSEL</button>
+    </div>
+  </div>
+  <script src="agrinet.js"></script>
+</body>
+
+</html>

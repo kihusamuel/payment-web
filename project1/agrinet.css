@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.bdx1 {
+    background-color: #349f44;
+    color: white;
+    padding: 9px;
+    margin-bottom: 9px;
+    border-radius: 3px;
+    font-size: smaller;
+}
+
+.bdx2,
+.bdx3,
+.bdx4,
+.bdx5,
+.bdx6,
+.bdx7 {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(20, 20, 20, 0.1);
+     display: inline-block;
+}
+.last {
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(29, 28, 28, 0.1);
+    
+}
+
+button[type="submit"] {
+    background-color: #24ad37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+button[type="notok"] {
+    background-color: rgb(196, 25, 25);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+max-width: 100%;
+}
+button[type="notok"]:hover {
+    background-color: rgb(156, 49, 41);
+}
+button[type="submit"]:hover {
+    background-color: rgb(56, 75, 52);
+}
+
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #2419a0;
+    border-radius: 4px;
+}
+
+input[type="number"]:focus {
+    border: 2px solid #e10b2f;
+    background-color: #fbf9fa;
+}
+
+.bdx2:hover {
+    background-color: #e8f5e9;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+    transition: background 0.3s, border 0.3s, box-shadow 0.3s;
+    transform: scale(1.10);
+}
+
+.last:hover {
+    background-color: #e8f5e9;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+    transition: background 0.3s, border 0.3s, box-shadow 0.3s;
+    transform: scale(1.10);
+}
+
+/* Additional styllying for a popout box which will only appear after you click the buy button */
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.modalw {
+    background-color: white;
+    color: rgb(18, 15, 15);
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    height: 30%;
+    margin: 15% auto;
+    padding: 20px;
+    max-width: 400px;
+}
+@media (max-width:350px) {
+    .modalw{
+        border-radius: 10px;
+    }
+}
+
+/*.close{
+    color: rgb(2, 16, 8);
+    float: left;
+    font-size: 26px;
+    font-weight: 900;
+
+}*/
+.close:hover,
+.close:focus {
+    color: rgb(152, 36, 25);
+    cursor: pointer;
+}
